@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Ajax/SPA</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <section>
+            <h1 style="color: rgb(56, 56, 170)">Ajax/SPA History</h1>
+          </section>
+          <section>
+            In the early-to-mid 1990s, most Web sites were based on complete
+            HTML pages. Each user action required that a complete new page be
+            loaded from the server.
+            <img
+              data-src="./Tradition-page.jpg"
+              alt="communication PC with Server"
+              style="height: 70vh"
+            />
+          </section>
+          <section style="text-align: start; font-size: smaller">
+            <li>
+              <mark>In 1996</mark>, the iframe tag was introduced by Internet
+              Explorer, like the object element, wich can load or fetch content
+              asynchronously.
+            </li>
+            <li>
+              <mark>In 1998</mark>, the Microsoft Outlook Web Access team
+              developed the concept behind the XMLHttpRequest scripting object.
+              This functionality was later implemented by Mozilla, Safari, Opera
+              and other browsers as the XMLHttpRequest JavaScript object.
+            </li>
+            <li>
+              The term AJAX was publicly used
+              <mark>on 18 February 2005</mark> in article by Jesse James
+              Garrett.
+            </li>
+            <li>
+              <mark>On 5 April 2006</mark>, the World Wide Web Consortium (W3C)
+              released the first draft specification for the XMLHttpRequest
+              object in an attempt to create an official Web standard.
+            </li>
+          </section>
+          <section>
+            <h3 style="color: rgb(56, 56, 170)">
+              AJAX<br />
+              (Asynchronous JavaScript And XML)
+            </h3>
+            <br />
+            It is a set of web development techniques using many web
+            technologies on the client-side to create asynchronous web
+            applications. Which means it can communicate with the server,
+            exchange data, and update the page without having to refresh the
+            page. It can send and receive information in various formats,
+            including JSON, XML, HTML, and text files.
+          </section>
+          <section style="font-size: smaller;">
+            <h3 style="color: rgb(56, 56, 170)">Ajax is a group of technologies. </h3>
+            <ul>
+              <li>
+                <em><b>HTML (or XHTML) and CSS</b></em> are used in combination to mark up
+                and style information
+              </li>
+							<li>
+								<em><b>The Document Object Model (DOM)</b></em> for dynamic display of and interaction with data
+							</li>
+              <li>
+                <em><b>JSON or XML </b></em>for the interchange of data
+              </li>
+              <li>
+								<em><b>XMLHttpRequest object or fetch function</b></em> for asynchronous communication
+              </li>
+							<li>
+								<em><b>JavaScript</b></em> to bring these technologies together
+							</li>
+            </ul>
+          </section>
+          <section>
+            <h4 style="color: rgb(56, 56, 170)">
+              AJAX is often used to create single-page applications (SPA)
+            </h4>
+            <img data-src="./SPA.jpg" alt="communication PC with Server" />
+          </section>
+          <section>
+            <b style="color: rgb(56, 56, 170)">SPA</b> is a web application or
+            website that interacts with the user by dynamically rewriting the
+            current web page with new data from the web server, instead of the
+            default method of a web browser loading entire new pages. <br />
+            <img
+              data-src="./Tradition-page.jpg"
+              alt="communication PC with Server"
+              style="height: 46vh"
+            />
+            <img
+              data-src="./SPA.jpg"
+              alt="communication PC with Server"
+              style="height: 46vh"
+            />
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
